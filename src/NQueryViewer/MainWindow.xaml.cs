@@ -78,7 +78,7 @@ namespace NQueryViewer
 
             editorView.CaretPositionChanged += EditorViewOnCaretPositionChanged;
             editorView.ZoomLevelChanged += EditorViewOnZoomLevelChanged;
-            editorView.Workspace.DataContext = NorthwindDataContext.Instance;
+            editorView.Workspace.DataContext = AssemblyDataContext.Instance; //NorthwindDataContext.Instance;
             editorView.Workspace.CurrentDocumentChanged += WorkspaceOnCurrentDocumentChanged;
 
             if (CurrentEditorView != null)
